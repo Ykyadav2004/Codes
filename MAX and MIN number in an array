@@ -1,0 +1,43 @@
+#include<iostream>
+#include<math.h>
+using namespace std ;
+
+
+int getmax(int yash[] , int size){
+  int max = INT16_MIN;
+
+  for( int i = 0; i< size;i++){
+    if (yash[i]>max)
+    {
+      max = yash[i];
+    }
+  }
+  return max;
+}
+
+int getmin(int yash[] , int size){
+  int min = INT16_MAX;
+
+  for( int i = 0; i< size;i++){
+    if (yash[i]<min)
+    {
+      min = yash[i];
+    }
+  }
+  return min;
+}
+int main()
+{cout<<"enter size";
+  int size;
+  cin>>size;
+int yash[100];
+
+for (int i = 0; i <size; i++)
+{cin>>yash[i];
+}
+cout<<"max value is"<<getmax(yash , size)<<endl;
+cout<<"max value is"<<getmin(yash,size)<<endl;
+
+ }
+ 
+
