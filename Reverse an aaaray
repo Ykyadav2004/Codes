@@ -1,0 +1,38 @@
+#include<iostream>
+#include<math.h>
+using namespace std ;
+
+
+
+int kunal(int yash[] , int n){
+ int start = 0;
+ int end = n-1;
+
+while (start <=end)
+{
+ swap(yash[start],yash[end]);
+ start ++;
+ end --;
+}
+
+}
+void printArray(int yash[], int n) {
+    
+    for(int i=0; i<n; i++) {
+        cout << yash[i] << " ";
+    }
+    cout << endl;
+}
+
+int main()
+{
+ 
+int yash [6] = {1,2,3,4,5,6};
+int pawan = kunal(yash,6);
+printArray(yash,6);
+
+
+}
+ 
+ 
+
