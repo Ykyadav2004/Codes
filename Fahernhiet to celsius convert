@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+
+int main(){
+
+  int startF, endF, stepSize;
+
+   
+ 
+    cin >> startF;
+
+    cin >> endF;
+ 
+    cin >> stepSize;
+
+   
+
+  
+    for (int f = startF; f <= endF; f += stepSize) {
+     
+        int c = static_cast<int>((5.0 / 9) * (f - 32));
+       
+        cout << f <<" "<< c << endl;
+    }
+
+    return 0;
+  
+}
+
+
